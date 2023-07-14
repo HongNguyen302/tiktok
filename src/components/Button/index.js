@@ -2,6 +2,7 @@ import classNames from "classnames/bind";
 import styles from './Button.module.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSignIn } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
@@ -23,7 +24,7 @@ function Button ({ to, href, leftIcon, rightIcon, className, primary=false, outl
 
     if (to) {
         props.to = to
-        Comp = 'Link'
+        Comp = Link
     } else if (href) {
         props.href = href
         Comp = 'a'
