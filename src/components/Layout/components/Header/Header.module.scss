@@ -100,15 +100,53 @@
     }
 }
 
-//.action {
+.action {
+    display: flex;
+    align-items: center;
+}
 
-//}
+.action-btn {
+    background-color: transparent;
+    position: relative;
+    
+    font-size: 2.2rem;
+    color: #161823;
+    
+    padding: 4px 10px;
+    cursor: pointer;
+
+}
+
+.badge {
+    position: absolute;
+    right: 0;
+    top: -3px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--primary);
+    border-radius: 10px;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 6px;
+
+
+}
 
 .more-btn {
     font-size: 2rem;
     margin-left: 28px;
     background-color: transparent;
     padding: 4px 8px;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 12px;
     cursor: pointer;
 }
 

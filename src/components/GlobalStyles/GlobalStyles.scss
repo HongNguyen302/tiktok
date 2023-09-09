@@ -1,10 +1,9 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;600;700&display=swap');
 
 :root {
     --primary: #fe2c55;
     --black: rgba(22, 24, 35, 1);
-    --text-color: rgba(22, 24, 35, 1);
+    --text-color: #161823;
     --white: #fff;
 
     // Default layout
@@ -23,7 +22,7 @@ html {
 }
 
 body {
-    font-family: 'Merriweather', serif;
+    font-family: 'IBM Plex Sans', serif;
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
@@ -39,4 +38,45 @@ button, input, [tabindex] {
 a[href] {
     color: var(--text-color);
     text-decoration: none;
+}
+
+// Custom font
+@font-face {
+    font-family: "IBM Plex Sans";
+    src: url('/assets/fonts/TikTokFont-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "IBM Plex Sans";
+    src: url('/assets/fonts/TikTokFont-Semibold.woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "IBM Plex Sans";
+    src: url('/assets/fonts/TikTokFont-Bold.woff2');
+    font-weight: 700;
+}
+
+// Custom tippy tooltip
+body {
+    .tippy-box {
+        background-color: rgba(84, 84, 84, 0.92);
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        border-radius: 8px;
+
+    }
+    .tippy-arrow {
+        background-color: rgba(84, 84, 84, 0.92);
+
+    }
+
+    .tippy-content {
+        padding: 8px 9px;
+    }
+
+    
 }
